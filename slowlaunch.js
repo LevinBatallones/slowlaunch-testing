@@ -8,7 +8,7 @@ const server = http.createServer((request, response) => {
     response.end("Healthy");
     return
  }
-response.setHeader("application-startup-duration", 1);
+response.setHeader("application-startup-duration", .00001);
  response.writeHead(200, { "Content-Type": "text/plain" });
  response.end("Hello 3002 :) !!");
 });
